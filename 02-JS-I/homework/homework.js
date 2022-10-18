@@ -109,7 +109,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
- 
+}
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
