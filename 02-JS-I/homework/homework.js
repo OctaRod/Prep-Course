@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -41,7 +41,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return (y-x);
+  return (x-y);
 }
 
 function multiplica(x, y) {
@@ -60,21 +60,30 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-return (x=y);
+if (x===y){
+  return (true);
+} else {
+return (false) }
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
- return (str1==str2);
+  if (str1===str2){
+    return (true);
+  } else {
+  return (false) }
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  return(num>90);
+  if (num<90){
+    return (true);
+  } else {
+  return (false) }
   
 }
 
@@ -82,13 +91,16 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  return(num<50);
+  if (num>50){
+    return (true);
+  } else {
+  return (false) }
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  (x % y);
+  return (x % y);
 }
 
 function esPar(num) {
@@ -98,7 +110,7 @@ function esPar(num) {
   if(num % 2 ===0) {
      return (true);
 } else {
-  return (false)
+  return (false);
 }}
 
 function esImpar(num) {
@@ -189,13 +201,13 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ("Hola" + nombre + "!")
+  return ("Hola " + nombre + "!");
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  var Area=(ancho*alto);
+  var Area=(ancho*alto)
   return (Area);
 }
 
