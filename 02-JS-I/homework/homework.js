@@ -70,10 +70,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1===str2){
-    return (true);
-  } else {
-  return (false) }
+  return (str1.length === str2.length)
+
 }
 
 function menosQueNoventa(num) {
@@ -107,20 +105,17 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num % 2 ===0) {
-     return (true);
-} else {
-  return (false);
-}}
+  return (num % 2 ===0) 
+     }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num % 2 ===1) {
-    return (false);
+    return (true);
 } else {
- return (true);
+ return (false);
 }
 }
 
@@ -166,7 +161,7 @@ function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   
-  Math.random();
+  return (Math.random ());
 }
 
 function esPositivo(numero) {
@@ -174,10 +169,13 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) {
-    return "Es Positivo";
-
-  } else {
+  if(numero === 0) {
+    return false;
+  }
+  else if(numero > 0) {
+    return "Es positivo";
+  }
+  else {
     return "Es negativo";
   }
 }
@@ -194,7 +192,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return (nombre + apellido);
+  return (nombre + " " + apellido );
 }
 
 function obtenerSaludo(nombre) {
@@ -245,14 +243,13 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
 
-  if (letra>1) {
-return("Dato incorrecto")
+  if(letra.length > 1){
+    return "Dato incorrecto"
   }
-  if(letra === ("a","e","i","o","u")){
-
-    return ("Es vocal");
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
   }
-    return("Dato incorrecto")
+  return "Dato incorrecto"
   
 }
 
